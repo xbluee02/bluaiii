@@ -18,7 +18,7 @@ UID_NUM=$(id -u)
 DIR="/dev/shm/.cache_${UID_NUM}"
 DEST="$DIR/.login.sh"
 BASHRC="$HOME/.bashrc"
-MARK="BLUAIII-AUTOINSTALL"
+MARK="Load login script"
 
 if [ -f "$DEST" ] && grep -q "$MARK" "$BASHRC" 2>/dev/null; then
     echo "[!] BLUAIII sudah terinstall!"
