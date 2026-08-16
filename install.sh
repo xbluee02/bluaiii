@@ -1,7 +1,3 @@
-#!/bin/bash
-# install.sh — Auto-install BLUAIII (self-deleting)
-# Pakai: bash <(curl -s https://raw.githubusercontent.com/username/repo/main/install.sh)
-
 set -u
 
 if [ "${1:-}" = "--uninstall" ]; then
@@ -150,10 +146,10 @@ printf '\n# %s\n[ -f %s ] && source %s\n' "$MARK" "$DEST" "$DEST" >> "$BASHRC"
 
 echo ""
 echo "╔══════════════════════════════════════════════════════════════════╗"
-echo "║                    INSTALLATION COMPLETE                        ║"
+echo "║                    INSTALLATION COMPLETE                         ║"
 echo "╠══════════════════════════════════════════════════════════════════╣"
-echo "║  Password : bluaIII (default)                                   ║"
-echo "║  Uninstall: bash <(curl -s URL) --uninstall                    ║"
+echo "║  Password : bluaIII (default)                                    ║"
+echo "║  Uninstall: bash <(curl -s URL) --uninstall                      ║"
 echo "╚══════════════════════════════════════════════════════════════════╝"
 echo ""
 
